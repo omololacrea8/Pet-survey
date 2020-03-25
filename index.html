@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET(DOG) SURVEY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=" https://fonts.google.com/specimen/Slabo+27px?selection.family=Roboto">
+    <link rel="icon" href="img/font.png" type="img/png" sizes="16*16">
+</head>
+<body>
+<h2 id="title"> Pet Survey</h1>
+<div id="form-paper">
+  <p id="description">Let us know what you think of Pets..Dogs to be precise</p>
+  <div class="contact-box">
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name:</label>
+      </div>
+      <div class="rightTab">
+        <input autofocus name="name" type="text" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email:</label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age:</label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name ="age" id="number" min="1" max="120" class="input-field" required placeholder="Enter your age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="feeling">Which options best describes your feeling towards animals?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="feeling" class="dropdown">
+          <option value="" disabled selected hidden>Please choose...</option>
+          <option value="better">They are loving</option>
+          <option value="depends">Depends on the animal. </option>
+          <option value="noThink">I usually don't think about them.</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+       <label for="pet">Do you have any pets now?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style:none;">
+          <li class="radio"><input id="yes" type="radio" name="pet" value="yes"><label for="yes">Yes</label></li>
+          <li class="radio"><input id="no" type="radio" name="pet" value="no"><label for="no">No</label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="possiblePet">If you have to choose one of these animals to have as a pet, which one would it be?</label>
+      </div>
+      <div class="rightTab">
+        <select id="possiblePet" name="possiblePet" class="dropdown">
+          <option value="" disabled selected hidden>Please choose...</option>
+          <option value="archie">Archie</option>
+          <option value="lucy">Lucy</option>
+          <option value="max">Max</option>
+          <option value="coco">Coco</option>
+          <option value="bailey">Bailey</option>
+          <option value="ollie">Ollie</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="petName">You are going to name this pet: </label>
+      </div>
+      <div class="rightTab">
+        <input type="type" id="petName" name="petName" class="input-field" placeholder="Enter pet name">
+      </div>
+    </div>
+    
+    <!--aspects-->
+    <div class="rowTab">
+      <div class="labels">
+        <label for="aspects">Which of the following do you take into consideration when you think about which pet to have (check all that apply)?</label>
+      </div>
+            <div class="rightTab">   
+         <div><label><input type="checkbox" value="1">Loyal and fiercely protective of owner.</label></div>
+         <div><label><input type="checkbox" value="2"> Intelligence and gentleness.</label></div>
+         <div><label><input type="checkbox" value="3">Easily trained</label></div>
+         <div><label><input type="checkbox" value="4">Good temperament </label></div>
+         <div><label><input type="checkbox" value="5">Adaptable</label></div>
+         <div><label><input type="checkbox" value="6">Life-Resilient</label></div>
+         <div><label><input type="checkbox" value="7">Easy to Groom</label></div>
+         <div><label><input type="checkbox" value="8">Potential for Mouthiness</label></div>
+        </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="influence">Anything else that influences your choice?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="influence" name="influence" class="input-field" placeholder="Enter your comments here..." rows="10" cols="30"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+</form>
+</div>
+<marquee><footer>Developed by <a href="https://github.com/omololacrea8/" target="_blank">Fele Omolola</a></footer></marquee>
+</body>
+</html>
